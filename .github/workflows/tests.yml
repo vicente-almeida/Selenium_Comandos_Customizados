@@ -1,8 +1,8 @@
 name: Smoke Tests - PR
 
 on:
-    pull_request:
-      branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 jobs:
   RunTest:
@@ -24,13 +24,12 @@ jobs:
 
       - name: Instalar o Chrome Driver
         uses: nanasess/setup-chromedriver@v1
-        run: |
+      - run: |
           export DISPLAY=:99
-          chromedriver --url-base/wd/hub &
-          sudo XVFB -ac :99 -screen 0 1280x1024x24 > /dev/null 2>&1 & # optional 
-
+          chromedriver --url-base=/wd/hub &
+          sudo Xvfb -ac :99 -screen 0 1280x1024x24 > /dev/null 2>&1 & # optional
       - name: Run Test
-        run: mvn test -Dtest=RunTest -Dbrowser=chrome-ci
+        run: mvn test -Dtest=RunCucumber -Dbrowser=chrome-ci
 
       - name: Gerar relatório
         if: always()
@@ -42,6 +41,3 @@ jobs:
         with:
           name: report-tests
           path: '**/formated-report/'
-
-
-
