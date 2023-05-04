@@ -10,7 +10,7 @@ import static support.Commands.*;
 public class LoginPage extends Utils {
 
     // elementos
-    private String URL = "http://automationpratice.com.br/";
+    private String URL = "http://automationpratice.com.brtttrrtyyyyyyytryrncvncvn/";
     private By botaoAcessarLogin = By.cssSelector(".right_list_fix > li > a > .fa-user");
     private By campoEmail = By.id("user");
     private By campoSenha = By.id("password");
@@ -38,7 +38,7 @@ public class LoginPage extends Utils {
     }
 
     public void clicarLogin(){
-        //clickElement(botaoFazerLogin);
+        clickElement(botaoFazerLogin);
 
     }
 
