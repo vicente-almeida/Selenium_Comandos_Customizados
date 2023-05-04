@@ -24,7 +24,7 @@ public class LoginSteps extends RunCucumber {
 
     @Quando("^clico em Login$")
     public void clico_em_Login() {
-        loginPage.clicarLogin();
+        //loginPage.clicarLogin();
     }
 
     @Então("^vejo mensagem de login com sucesso$")

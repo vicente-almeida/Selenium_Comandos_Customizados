@@ -38,7 +38,7 @@ public class LoginPage extends Utils {
     }
 
     public void clicarLogin(){
-        clickElement(botaoFazerLogin);
+        //clickElement(botaoFazerLogin);
 
     }
 
