@@ -3,7 +3,7 @@ name: Schedule Tests - PR
 on:
   schedule:
     - cron: '0/5 * * * 1-5'
-      
+
 jobs:
   RunTest:
     runs-on: ubuntu-latest
