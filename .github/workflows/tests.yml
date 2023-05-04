@@ -30,7 +30,7 @@ jobs:
           sudo XVFB -ac :99 -screen 0 1280x1024x24 > /dev/null 2>&1 & # optional 
 
       - name: Run Test
-        run: mvn test -Dtest=RunTest -Dbrowser=chrome-ci -DfailIfNoTests=false
+        run: mvn test -Dtest=RunTest -Dbrowser=chrome-ci 
 
       - name: Gerar relatório
         run: mvn cluecumber-report:reporting
