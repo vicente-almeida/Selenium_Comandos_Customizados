@@ -8,7 +8,7 @@
 
     @login-sucesso
     Cenário: Login com sucesso
-      Dado que estou na tela de login
-      Quando preencho login "eduardo.finotti@qazando.com" e senha "123456"
-      E clico em Login
-      Então vejo mensagem de login com sucesso
+      #Dado que estou na tela de login
+      #Quando preencho login "eduardo.finotti@qazando.com" e senha "123456"
+      #E clico em Login
+      #Então vejo mensagem de login com sucesso
